@@ -1,0 +1,22 @@
+{
+  "GetdeptInfo" : {
+    "procedureString" : "Exec HumanResources.getDeparmentInfoOut ?,?",
+    "parameters" : [ {
+      "name" : "deptid",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "2",
+      "required" : false,
+      "parameterType" : "IN"
+    }, {
+      "name" : "Name",
+      "type" : "string",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    } ]
+  }
+}
