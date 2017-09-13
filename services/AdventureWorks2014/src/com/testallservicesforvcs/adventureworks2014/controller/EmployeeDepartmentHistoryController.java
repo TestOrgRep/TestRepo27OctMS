@@ -54,9 +54,9 @@ public class EmployeeDepartmentHistoryController {
 	private EmployeeDepartmentHistoryService employeeDepartmentHistoryService;
 
 	@ApiOperation(value = "Creates a new EmployeeDepartmentHistory instance.")
-	@RequestMapping(method = RequestMethod.POST)
+@RequestMapping(method = RequestMethod.POST)
     @WMAccessVisibility(value = AccessSpecifier.APP_ONLY)
-	public EmployeeDepartmentHistory createEmployeeDepartmentHistory(@RequestBody EmployeeDepartmentHistory employeeDepartmentHistory) {
+public EmployeeDepartmentHistory createEmployeeDepartmentHistory(@RequestBody EmployeeDepartmentHistory employeeDepartmentHistory) {
 		LOGGER.debug("Create EmployeeDepartmentHistory with information: {}" , employeeDepartmentHistory);
 
 		employeeDepartmentHistory = employeeDepartmentHistoryService.create(employeeDepartmentHistory);
@@ -65,7 +65,7 @@ public class EmployeeDepartmentHistoryController {
 	    return employeeDepartmentHistory;
 	}
 
-    @ApiOperation(value = "Returns the EmployeeDepartmentHistory instance associated with the given composite-id.")
+@ApiOperation(value = "Returns the EmployeeDepartmentHistory instance associated with the given composite-id.")
     @RequestMapping(value = "/composite-id", method = RequestMethod.GET)
     @WMAccessVisibility(value = AccessSpecifier.APP_ONLY)
     public EmployeeDepartmentHistory getEmployeeDepartmentHistory(@RequestParam("businessEntityId") Integer businessEntityId,@RequestParam("startDate") Date startDate,@RequestParam("departmentId") Short departmentId,@RequestParam("shiftId") Short shiftId) throws EntityNotFoundException {

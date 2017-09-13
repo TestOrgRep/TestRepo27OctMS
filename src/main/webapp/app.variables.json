@@ -88,9 +88,9 @@
     "isList" : false,
     "saveInPhonegap" : false
   },
-  "loginVariable" : {
+  "loginAction" : {
     "_id" : "wm-loginVariable-wm.LoginVariable-1481871579192",
-    "name" : "loginVariable",
+    "name" : "loginAction",
     "owner" : "App",
     "category" : "wm.LoginVariable",
     "dataBinding" : [ {
@@ -120,9 +120,9 @@
     "transformationRequired" : false,
     "useDefaultSuccessHandler" : true
   },
-  "logoutVariable" : {
+  "logoutAction" : {
     "_id" : "wm-logoutVariable-wm.LogoutVariable-1481871579192",
-    "name" : "logoutVariable",
+    "name" : "logoutAction",
     "owner" : "App",
     "category" : "wm.LogoutVariable",
     "type" : "string",

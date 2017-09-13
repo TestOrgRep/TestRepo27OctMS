@@ -7,6 +7,8 @@ package com.testallservicesforvcs.adventureworks2014.service;
 
 import java.util.Map;
 
+import javax.validation.Valid;
+
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
@@ -32,7 +34,7 @@ public interface VjobCandidateService {
      * @param vjobCandidate Details of the VjobCandidate to be created; value cannot be null.
      * @return The newly created VjobCandidate.
      */
-	VjobCandidate create(VjobCandidate vjobCandidate);
+	VjobCandidate create(@Valid VjobCandidate vjobCandidate);
 
 
 	/**
@@ -62,7 +64,7 @@ public interface VjobCandidateService {
 	 * @return The updated VjobCandidate.
 	 * @throws EntityNotFoundException if no VjobCandidate is found with given input.
 	 */
-	VjobCandidate update(VjobCandidate vjobCandidate) throws EntityNotFoundException;
+	VjobCandidate update(@Valid VjobCandidate vjobCandidate) throws EntityNotFoundException;
 
     /**
 	 * Deletes an existing VjobCandidate with the given id.

@@ -25,6 +25,11 @@
     "enforceCsrfSecurity" : false,
     "headerName" : "X-WM-XSRF-TOKEN"
   },
+  "corsConfig" : {
+    "enabled" : false,
+    "maxAge" : 1600,
+    "pathEntries" : [ ]
+  },
   "tokenAuthConfig" : {
     "enabled" : true,
     "parameter" : "WM_AUTH_TOKEN",

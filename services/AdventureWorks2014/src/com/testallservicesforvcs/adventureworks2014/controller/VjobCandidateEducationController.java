@@ -54,9 +54,9 @@ public class VjobCandidateEducationController {
 	private VjobCandidateEducationService vjobCandidateEducationService;
 
 	@ApiOperation(value = "Creates a new VjobCandidateEducation instance.")
-	@RequestMapping(method = RequestMethod.POST)
+@RequestMapping(method = RequestMethod.POST)
     @WMAccessVisibility(value = AccessSpecifier.APP_ONLY)
-	public VjobCandidateEducation createVjobCandidateEducation(@RequestBody VjobCandidateEducation vjobCandidateEducation) {
+public VjobCandidateEducation createVjobCandidateEducation(@RequestBody VjobCandidateEducation vjobCandidateEducation) {
 		LOGGER.debug("Create VjobCandidateEducation with information: {}" , vjobCandidateEducation);
 
 		vjobCandidateEducation = vjobCandidateEducationService.create(vjobCandidateEducation);
@@ -65,7 +65,7 @@ public class VjobCandidateEducationController {
 	    return vjobCandidateEducation;
 	}
 
-    @ApiOperation(value = "Returns the VjobCandidateEducation instance associated with the given composite-id.")
+@ApiOperation(value = "Returns the VjobCandidateEducation instance associated with the given composite-id.")
     @RequestMapping(value = "/composite-id", method = RequestMethod.GET)
     @WMAccessVisibility(value = AccessSpecifier.APP_ONLY)
     public VjobCandidateEducation getVjobCandidateEducation(@RequestParam("jobCandidateId") Integer jobCandidateId,@RequestParam("edu_level") String edu_level,@RequestParam("edu_startDate") LocalDateTime edu_startDate,@RequestParam("edu_endDate") LocalDateTime edu_endDate,@RequestParam("edu_degree") String edu_degree,@RequestParam("edu_major") String edu_major,@RequestParam("edu_minor") String edu_minor,@RequestParam("edu_gpa") String edu_gpa,@RequestParam("edu_gpascale") String edu_gpascale,@RequestParam("edu_school") String edu_school,@RequestParam("edu_loc_countryRegion") String edu_loc_countryRegion,@RequestParam("edu_loc_state") String edu_loc_state,@RequestParam("edu_loc_city") String edu_loc_city) throws EntityNotFoundException {

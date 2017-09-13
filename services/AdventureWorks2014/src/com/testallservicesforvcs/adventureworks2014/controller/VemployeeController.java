@@ -53,9 +53,9 @@ public class VemployeeController {
 	private VemployeeService vemployeeService;
 
 	@ApiOperation(value = "Creates a new Vemployee instance.")
-	@RequestMapping(method = RequestMethod.POST)
+@RequestMapping(method = RequestMethod.POST)
     @WMAccessVisibility(value = AccessSpecifier.APP_ONLY)
-	public Vemployee createVemployee(@RequestBody Vemployee vemployee) {
+public Vemployee createVemployee(@RequestBody Vemployee vemployee) {
 		LOGGER.debug("Create Vemployee with information: {}" , vemployee);
 
 		vemployee = vemployeeService.create(vemployee);
@@ -64,7 +64,7 @@ public class VemployeeController {
 	    return vemployee;
 	}
 
-    @ApiOperation(value = "Returns the Vemployee instance associated with the given composite-id.")
+@ApiOperation(value = "Returns the Vemployee instance associated with the given composite-id.")
     @RequestMapping(value = "/composite-id", method = RequestMethod.GET)
     @WMAccessVisibility(value = AccessSpecifier.APP_ONLY)
     public Vemployee getVemployee(@RequestParam("businessEntityId") Integer businessEntityId,@RequestParam("title") String title,@RequestParam("firstName") String firstName,@RequestParam("middleName") String middleName,@RequestParam("lastName") String lastName,@RequestParam("suffix") String suffix,@RequestParam("jobTitle") String jobTitle,@RequestParam("phoneNumber") String phoneNumber,@RequestParam("phoneNumberType") String phoneNumberType,@RequestParam("emailAddress") String emailAddress,@RequestParam("emailPromotion") Integer emailPromotion,@RequestParam("addressLine1") String addressLine1,@RequestParam("addressLine2") String addressLine2,@RequestParam("city") String city,@RequestParam("stateProvinceName") String stateProvinceName,@RequestParam("postalCode") String postalCode,@RequestParam("countryRegionName") String countryRegionName,@RequestParam("additionalContactInfo") String additionalContactInfo) throws EntityNotFoundException {

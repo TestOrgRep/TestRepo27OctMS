@@ -54,9 +54,9 @@ public class ShiftController {
 	private ShiftService shiftService;
 
 	@ApiOperation(value = "Creates a new Shift instance.")
-	@RequestMapping(method = RequestMethod.POST)
+@RequestMapping(method = RequestMethod.POST)
     @WMAccessVisibility(value = AccessSpecifier.APP_ONLY)
-	public Shift createShift(@RequestBody Shift shift) {
+public Shift createShift(@RequestBody Shift shift) {
 		LOGGER.debug("Create Shift with information: {}" , shift);
 
 		shift = shiftService.create(shift);
@@ -64,7 +64,6 @@ public class ShiftController {
 
 	    return shift;
 	}
-
 
     @ApiOperation(value = "Returns the Shift instance associated with the given id.")
     @RequestMapping(value = "/{id:.+}", method = RequestMethod.GET)
@@ -102,18 +101,20 @@ public class ShiftController {
         return deletedShift != null;
     }
 
-    @RequestMapping(value = "/name/{name}", method = RequestMethod.GET)
-    @ApiOperation(value = "Returns the matching Shift with given unique key values.")
-    public Shift getByName(@PathVariable("name") String name) {
-        LOGGER.debug("Getting Shift with uniques key Name");
-        return shiftService.getByName(name);
-    }
-
     @RequestMapping(value = "/startTime-endTime", method = RequestMethod.GET)
     @ApiOperation(value = "Returns the matching Shift with given unique key values.")
+    @WMAccessVisibility(value = AccessSpecifier.APP_ONLY)
     public Shift getByStartTimeAndEndTime(@RequestParam("startTime") Time startTime, @RequestParam("endTime") Time endTime) {
         LOGGER.debug("Getting Shift with uniques key StartTimeAndEndTime");
         return shiftService.getByStartTimeAndEndTime(startTime, endTime);
+    }
+
+    @RequestMapping(value = "/name/{name}", method = RequestMethod.GET)
+    @ApiOperation(value = "Returns the matching Shift with given unique key values.")
+    @WMAccessVisibility(value = AccessSpecifier.APP_ONLY)
+    public Shift getByName(@PathVariable("name") String name) {
+        LOGGER.debug("Getting Shift with uniques key Name");
+        return shiftService.getByName(name);
     }
 
     /**

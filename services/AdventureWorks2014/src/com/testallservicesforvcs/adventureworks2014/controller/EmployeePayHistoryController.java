@@ -54,9 +54,9 @@ public class EmployeePayHistoryController {
 	private EmployeePayHistoryService employeePayHistoryService;
 
 	@ApiOperation(value = "Creates a new EmployeePayHistory instance.")
-	@RequestMapping(method = RequestMethod.POST)
+@RequestMapping(method = RequestMethod.POST)
     @WMAccessVisibility(value = AccessSpecifier.APP_ONLY)
-	public EmployeePayHistory createEmployeePayHistory(@RequestBody EmployeePayHistory employeePayHistory) {
+public EmployeePayHistory createEmployeePayHistory(@RequestBody EmployeePayHistory employeePayHistory) {
 		LOGGER.debug("Create EmployeePayHistory with information: {}" , employeePayHistory);
 
 		employeePayHistory = employeePayHistoryService.create(employeePayHistory);
@@ -65,7 +65,7 @@ public class EmployeePayHistoryController {
 	    return employeePayHistory;
 	}
 
-    @ApiOperation(value = "Returns the EmployeePayHistory instance associated with the given composite-id.")
+@ApiOperation(value = "Returns the EmployeePayHistory instance associated with the given composite-id.")
     @RequestMapping(value = "/composite-id", method = RequestMethod.GET)
     @WMAccessVisibility(value = AccessSpecifier.APP_ONLY)
     public EmployeePayHistory getEmployeePayHistory(@RequestParam("businessEntityId") Integer businessEntityId,@RequestParam("rateChangeDate") LocalDateTime rateChangeDate) throws EntityNotFoundException {

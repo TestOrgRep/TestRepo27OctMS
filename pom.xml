@@ -48,6 +48,13 @@
             </resource>
             <resource>
                 <filtering>true</filtering>
+                <directory>services/MyJavaService122/src</directory>
+                <excludes>
+                    <exclude>**/*.java</exclude>
+                </excludes>
+            </resource>
+            <resource>
+                <filtering>true</filtering>
                 <directory>services/googleapis/src</directory>
                 <excludes>
                     <exclude>**/*.java</exclude>
@@ -155,6 +162,7 @@
                                 <source>services/FeedService/src</source>
                                 <source>services/FileService/src</source>
                                 <source>services/MyJavaService/src</source>
+                                <source>services/MyJavaService122/src</source>
                                 <source>services/googleapis/src</source>
                                 <source>services/heartRate/src</source>
                                 <source>services/hrdb/src</source>
@@ -334,6 +342,11 @@
             <scope>system</scope>
             <systemPath>${basedir}/lib/sqljdbc4-4.0.jar</systemPath>
         </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.38</version>
+        </dependency>
     </dependencies>
     <dependencyManagement>
         <dependencies>
@@ -361,9 +374,9 @@
         </dependencies>
     </dependencyManagement>
     <properties>
-        <spring.version>4.2.0.RELEASE</spring.version>
+        <spring.version>4.3.9.RELEASE</spring.version>
         <profile.props.file>development.properties</profile.props.file>
         <spring.security.version>4.1.2.RELEASE</spring.security.version>
-        <wavemaker.studio.version>8.5.0.3250</wavemaker.studio.version>
+        <wavemaker.studio.version>9.0.0.3623</wavemaker.studio.version>
     </properties>
 </project>

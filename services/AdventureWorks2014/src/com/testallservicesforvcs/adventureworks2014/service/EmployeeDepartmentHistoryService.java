@@ -7,6 +7,8 @@ package com.testallservicesforvcs.adventureworks2014.service;
 
 import java.util.Map;
 
+import javax.validation.Valid;
+
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
@@ -32,7 +34,7 @@ public interface EmployeeDepartmentHistoryService {
      * @param employeeDepartmentHistory Details of the EmployeeDepartmentHistory to be created; value cannot be null.
      * @return The newly created EmployeeDepartmentHistory.
      */
-	EmployeeDepartmentHistory create(EmployeeDepartmentHistory employeeDepartmentHistory);
+	EmployeeDepartmentHistory create(@Valid EmployeeDepartmentHistory employeeDepartmentHistory);
 
 
 	/**
@@ -62,7 +64,7 @@ public interface EmployeeDepartmentHistoryService {
 	 * @return The updated EmployeeDepartmentHistory.
 	 * @throws EntityNotFoundException if no EmployeeDepartmentHistory is found with given input.
 	 */
-	EmployeeDepartmentHistory update(EmployeeDepartmentHistory employeeDepartmentHistory) throws EntityNotFoundException;
+	EmployeeDepartmentHistory update(@Valid EmployeeDepartmentHistory employeeDepartmentHistory) throws EntityNotFoundException;
 
     /**
 	 * Deletes an existing EmployeeDepartmentHistory with the given id.

@@ -9,6 +9,8 @@ package com.hrdb.controller;
 import java.util.HashMap;
 import java.util.Map;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -47,7 +49,7 @@ public class QueryExecutionController {
     @RequestMapping(value = "/queries/employeedatabyID", method = RequestMethod.GET)
     @WMAccessVisibility(value = AccessSpecifier.APP_ONLY)
     @ApiOperation(value = "getemployeedatabyID")
-    public Page<EmployeedatabyIdResponse> executeEmployeedatabyID(@RequestParam(value = "id", required = false) Integer id, Pageable pageable) {
+    public Page<EmployeedatabyIdResponse> executeEmployeedatabyID(@RequestParam(value = "id", required = false) Integer id, Pageable pageable, HttpServletRequest _request) {
         LOGGER.debug("Executing named query: employeedatabyID");
         Page<EmployeedatabyIdResponse> _result = queryService.executeEmployeedatabyID(id, pageable);
         LOGGER.debug("got the result for named query: employeedatabyID, result:{}", _result);
@@ -57,7 +59,7 @@ public class QueryExecutionController {
     @ApiOperation(value = "Returns downloadable file for query employeedatabyID")
     @RequestMapping(value = "/queries/employeedatabyID/export/{exportType}", method = RequestMethod.GET, produces = "application/octet-stream")
     @WMAccessVisibility(value = AccessSpecifier.APP_ONLY)
-    public Downloadable exportEmployeedatabyID(@PathVariable("exportType") ExportType exportType, @RequestParam(value = "id", required = false) Integer id, Pageable pageable) {
+    public Downloadable exportEmployeedatabyID(@PathVariable("exportType") ExportType exportType, @RequestParam(value = "id", required = false) Integer id, Pageable pageable, HttpServletRequest _request) {
         LOGGER.debug("Exporting named query: employeedatabyID");
 
         return queryService.exportEmployeedatabyID(exportType, id, pageable);

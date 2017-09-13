@@ -55,6 +55,7 @@
   "maxPageSize" : 100,
   "minPoolSize" : 2,
   "maxPoolSize" : 4,
+  "transactionTimeout" : 30,
   "dataSourceType" : "WM_MANAGED_DATASOURCE",
   "jndiName" : "",
   "reloadInfo" : {

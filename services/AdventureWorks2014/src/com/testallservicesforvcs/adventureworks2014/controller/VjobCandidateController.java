@@ -54,9 +54,9 @@ public class VjobCandidateController {
 	private VjobCandidateService vjobCandidateService;
 
 	@ApiOperation(value = "Creates a new VjobCandidate instance.")
-	@RequestMapping(method = RequestMethod.POST)
+@RequestMapping(method = RequestMethod.POST)
     @WMAccessVisibility(value = AccessSpecifier.APP_ONLY)
-	public VjobCandidate createVjobCandidate(@RequestBody VjobCandidate vjobCandidate) {
+public VjobCandidate createVjobCandidate(@RequestBody VjobCandidate vjobCandidate) {
 		LOGGER.debug("Create VjobCandidate with information: {}" , vjobCandidate);
 
 		vjobCandidate = vjobCandidateService.create(vjobCandidate);
@@ -65,7 +65,7 @@ public class VjobCandidateController {
 	    return vjobCandidate;
 	}
 
-    @ApiOperation(value = "Returns the VjobCandidate instance associated with the given composite-id.")
+@ApiOperation(value = "Returns the VjobCandidate instance associated with the given composite-id.")
     @RequestMapping(value = "/composite-id", method = RequestMethod.GET)
     @WMAccessVisibility(value = AccessSpecifier.APP_ONLY)
     public VjobCandidate getVjobCandidate(@RequestParam("jobCandidateId") Integer jobCandidateId,@RequestParam("businessEntityId") Integer businessEntityId,@RequestParam("name_prefix") String name_prefix,@RequestParam("name_first") String name_first,@RequestParam("name_middle") String name_middle,@RequestParam("name_last") String name_last,@RequestParam("name_suffix") String name_suffix,@RequestParam("skills") String skills,@RequestParam("addr_type") String addr_type,@RequestParam("addr_loc_countryRegion") String addr_loc_countryRegion,@RequestParam("addr_loc_state") String addr_loc_state,@RequestParam("addr_loc_city") String addr_loc_city,@RequestParam("addr_postalCode") String addr_postalCode,@RequestParam("email") String email,@RequestParam("webSite") String webSite,@RequestParam("modifiedDate") LocalDateTime modifiedDate) throws EntityNotFoundException {

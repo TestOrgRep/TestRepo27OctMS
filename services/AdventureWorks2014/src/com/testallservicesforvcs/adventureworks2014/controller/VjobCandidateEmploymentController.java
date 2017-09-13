@@ -54,9 +54,9 @@ public class VjobCandidateEmploymentController {
 	private VjobCandidateEmploymentService vjobCandidateEmploymentService;
 
 	@ApiOperation(value = "Creates a new VjobCandidateEmployment instance.")
-	@RequestMapping(method = RequestMethod.POST)
+@RequestMapping(method = RequestMethod.POST)
     @WMAccessVisibility(value = AccessSpecifier.APP_ONLY)
-	public VjobCandidateEmployment createVjobCandidateEmployment(@RequestBody VjobCandidateEmployment vjobCandidateEmployment) {
+public VjobCandidateEmployment createVjobCandidateEmployment(@RequestBody VjobCandidateEmployment vjobCandidateEmployment) {
 		LOGGER.debug("Create VjobCandidateEmployment with information: {}" , vjobCandidateEmployment);
 
 		vjobCandidateEmployment = vjobCandidateEmploymentService.create(vjobCandidateEmployment);
@@ -65,7 +65,7 @@ public class VjobCandidateEmploymentController {
 	    return vjobCandidateEmployment;
 	}
 
-    @ApiOperation(value = "Returns the VjobCandidateEmployment instance associated with the given composite-id.")
+@ApiOperation(value = "Returns the VjobCandidateEmployment instance associated with the given composite-id.")
     @RequestMapping(value = "/composite-id", method = RequestMethod.GET)
     @WMAccessVisibility(value = AccessSpecifier.APP_ONLY)
     public VjobCandidateEmployment getVjobCandidateEmployment(@RequestParam("jobCandidateId") Integer jobCandidateId,@RequestParam("emp_startDate") LocalDateTime emp_startDate,@RequestParam("emp_endDate") LocalDateTime emp_endDate,@RequestParam("emp_orgName") String emp_orgName,@RequestParam("emp_jobTitle") String emp_jobTitle,@RequestParam("emp_responsibility") String emp_responsibility,@RequestParam("emp_functionCategory") String emp_functionCategory,@RequestParam("emp_industryCategory") String emp_industryCategory,@RequestParam("emp_loc_countryRegion") String emp_loc_countryRegion,@RequestParam("emp_loc_state") String emp_loc_state,@RequestParam("emp_loc_city") String emp_loc_city) throws EntityNotFoundException {

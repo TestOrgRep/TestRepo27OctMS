@@ -54,9 +54,9 @@ public class VemployeeDepartmentController {
 	private VemployeeDepartmentService vemployeeDepartmentService;
 
 	@ApiOperation(value = "Creates a new VemployeeDepartment instance.")
-	@RequestMapping(method = RequestMethod.POST)
+@RequestMapping(method = RequestMethod.POST)
     @WMAccessVisibility(value = AccessSpecifier.APP_ONLY)
-	public VemployeeDepartment createVemployeeDepartment(@RequestBody VemployeeDepartment vemployeeDepartment) {
+public VemployeeDepartment createVemployeeDepartment(@RequestBody VemployeeDepartment vemployeeDepartment) {
 		LOGGER.debug("Create VemployeeDepartment with information: {}" , vemployeeDepartment);
 
 		vemployeeDepartment = vemployeeDepartmentService.create(vemployeeDepartment);
@@ -65,7 +65,7 @@ public class VemployeeDepartmentController {
 	    return vemployeeDepartment;
 	}
 
-    @ApiOperation(value = "Returns the VemployeeDepartment instance associated with the given composite-id.")
+@ApiOperation(value = "Returns the VemployeeDepartment instance associated with the given composite-id.")
     @RequestMapping(value = "/composite-id", method = RequestMethod.GET)
     @WMAccessVisibility(value = AccessSpecifier.APP_ONLY)
     public VemployeeDepartment getVemployeeDepartment(@RequestParam("businessEntityId") Integer businessEntityId,@RequestParam("title") String title,@RequestParam("firstName") String firstName,@RequestParam("middleName") String middleName,@RequestParam("lastName") String lastName,@RequestParam("suffix") String suffix,@RequestParam("jobTitle") String jobTitle,@RequestParam("department") String department,@RequestParam("groupName") String groupName,@RequestParam("startDate") Date startDate) throws EntityNotFoundException {

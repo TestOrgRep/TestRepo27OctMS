@@ -7,6 +7,8 @@ package com.testallservicesforvcs.adventureworks2014.service;
 
 import java.util.Map;
 
+import javax.validation.Valid;
+
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
@@ -32,7 +34,7 @@ public interface VemployeeService {
      * @param vemployee Details of the Vemployee to be created; value cannot be null.
      * @return The newly created Vemployee.
      */
-	Vemployee create(Vemployee vemployee);
+	Vemployee create(@Valid Vemployee vemployee);
 
 
 	/**
@@ -62,7 +64,7 @@ public interface VemployeeService {
 	 * @return The updated Vemployee.
 	 * @throws EntityNotFoundException if no Vemployee is found with given input.
 	 */
-	Vemployee update(Vemployee vemployee) throws EntityNotFoundException;
+	Vemployee update(@Valid Vemployee vemployee) throws EntityNotFoundException;
 
     /**
 	 * Deletes an existing Vemployee with the given id.

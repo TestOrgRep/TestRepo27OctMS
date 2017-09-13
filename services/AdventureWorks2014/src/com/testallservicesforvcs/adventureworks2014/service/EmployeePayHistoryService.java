@@ -7,6 +7,8 @@ package com.testallservicesforvcs.adventureworks2014.service;
 
 import java.util.Map;
 
+import javax.validation.Valid;
+
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
@@ -32,7 +34,7 @@ public interface EmployeePayHistoryService {
      * @param employeePayHistory Details of the EmployeePayHistory to be created; value cannot be null.
      * @return The newly created EmployeePayHistory.
      */
-	EmployeePayHistory create(EmployeePayHistory employeePayHistory);
+	EmployeePayHistory create(@Valid EmployeePayHistory employeePayHistory);
 
 
 	/**
@@ -62,7 +64,7 @@ public interface EmployeePayHistoryService {
 	 * @return The updated EmployeePayHistory.
 	 * @throws EntityNotFoundException if no EmployeePayHistory is found with given input.
 	 */
-	EmployeePayHistory update(EmployeePayHistory employeePayHistory) throws EntityNotFoundException;
+	EmployeePayHistory update(@Valid EmployeePayHistory employeePayHistory) throws EntityNotFoundException;
 
     /**
 	 * Deletes an existing EmployeePayHistory with the given id.

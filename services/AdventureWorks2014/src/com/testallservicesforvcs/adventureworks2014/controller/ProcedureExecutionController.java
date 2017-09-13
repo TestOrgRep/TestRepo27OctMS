@@ -10,6 +10,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -43,7 +45,7 @@ public class ProcedureExecutionController {
     @RequestMapping(value = "/procedure/execute/GetdeptInfo", method = RequestMethod.GET)
     @WMAccessVisibility(value = AccessSpecifier.APP_ONLY)
     @ApiOperation(value = "d")
-    public List<GetdeptInfoResponse> executeGetdeptInfo(@RequestParam(value = "deptid", required = false) Integer deptid) {
+    public List<GetdeptInfoResponse> executeGetdeptInfo(@RequestParam(value = "deptid", required = false) Integer deptid, HttpServletRequest _request) {
         LOGGER.debug("Executing named procedure: GetdeptInfo");
         GetdeptInfoResponse _result = procedureService.executeGetdeptInfo(deptid);
         LOGGER.debug("got the result for v1 named procedure: GetdeptInfo, result:{}", _result);

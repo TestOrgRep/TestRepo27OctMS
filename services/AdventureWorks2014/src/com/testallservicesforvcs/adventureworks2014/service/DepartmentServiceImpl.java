@@ -12,10 +12,12 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.validation.annotation.Validated;
 
 import com.wavemaker.runtime.data.dao.WMGenericDao;
 import com.wavemaker.runtime.data.exception.EntityNotFoundException;
@@ -34,10 +36,12 @@ import com.testallservicesforvcs.adventureworks2014.EmployeeDepartmentHistory;
  * @see Department
  */
 @Service("AdventureWorks2014.DepartmentService")
+@Validated
 public class DepartmentServiceImpl implements DepartmentService {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(DepartmentServiceImpl.class);
 
+    @Lazy
     @Autowired
 	@Qualifier("AdventureWorks2014.EmployeeDepartmentHistoryService")
 	private EmployeeDepartmentHistoryService employeeDepartmentHistoryService;

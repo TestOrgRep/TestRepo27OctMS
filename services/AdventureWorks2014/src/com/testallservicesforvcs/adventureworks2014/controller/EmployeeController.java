@@ -23,7 +23,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RequestPart;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.multipart.MultipartHttpServletRequest;
 
 import com.wavemaker.runtime.data.exception.EntityNotFoundException;
@@ -63,26 +65,17 @@ public class EmployeeController {
 	private EmployeeService employeeService;
 
 	@ApiOperation(value = "Creates a new Employee instance.")
-	@RequestMapping(method = RequestMethod.POST)
+@RequestMapping(method = RequestMethod.POST, consumes = "multipart/form-data")
     @WMAccessVisibility(value = AccessSpecifier.APP_ONLY)
-	public Employee createEmployee(@RequestBody Employee employee) {
+public Employee createEmployee(@RequestPart("wm_data_json") Employee employee, @RequestPart(value = "organizationNode", required = false) MultipartFile _organizationNode) {
 		LOGGER.debug("Create Employee with information: {}" , employee);
 
+    employee.setOrganizationNode(WMMultipartUtils.toByteArray(_organizationNode));
 		employee = employeeService.create(employee);
 		LOGGER.debug("Created Employee with information: {}" , employee);
 
 	    return employee;
 	}
-
-	@ApiOperation(value = "Creates a new Employee instance.This API should be used when the Employee instance has fields that requires multipart data.")
-	@RequestMapping(method = RequestMethod.POST, consumes = {"multipart/form-data"})
-    @WMAccessVisibility(value = AccessSpecifier.APP_ONLY)
-    public Employee createEmployee(MultipartHttpServletRequest multipartHttpServletRequest) {
-    	Employee employee = WMMultipartUtils.toObject(multipartHttpServletRequest, Employee.class, "AdventureWorks2014"); 
-        LOGGER.debug("Creating a new Employee with information: {}" , employee);
-        return employeeService.create(employee);
-    }
-
 
     @ApiOperation(value = "Returns the Employee instance associated with the given id.")
     @RequestMapping(value = "/{id:.+}", method = RequestMethod.GET)
@@ -149,22 +142,25 @@ public class EmployeeController {
         return deletedEmployee != null;
     }
 
-    @RequestMapping(value = "/rowguid/{rowguid}", method = RequestMethod.GET)
-    @ApiOperation(value = "Returns the matching Employee with given unique key values.")
-    public Employee getByRowguid(@PathVariable("rowguid") String rowguid) {
-        LOGGER.debug("Getting Employee with uniques key Rowguid");
-        return employeeService.getByRowguid(rowguid);
-    }
-
     @RequestMapping(value = "/loginId/{loginId}", method = RequestMethod.GET)
     @ApiOperation(value = "Returns the matching Employee with given unique key values.")
+    @WMAccessVisibility(value = AccessSpecifier.APP_ONLY)
     public Employee getByLoginId(@PathVariable("loginId") String loginId) {
         LOGGER.debug("Getting Employee with uniques key LoginId");
         return employeeService.getByLoginId(loginId);
     }
 
+    @RequestMapping(value = "/rowguid/{rowguid}", method = RequestMethod.GET)
+    @ApiOperation(value = "Returns the matching Employee with given unique key values.")
+    @WMAccessVisibility(value = AccessSpecifier.APP_ONLY)
+    public Employee getByRowguid(@PathVariable("rowguid") String rowguid) {
+        LOGGER.debug("Getting Employee with uniques key Rowguid");
+        return employeeService.getByRowguid(rowguid);
+    }
+
     @RequestMapping(value = "/nationalIdnumber/{nationalIdnumber}", method = RequestMethod.GET)
     @ApiOperation(value = "Returns the matching Employee with given unique key values.")
+    @WMAccessVisibility(value = AccessSpecifier.APP_ONLY)
     public Employee getByNationalIdnumber(@PathVariable("nationalIdnumber") String nationalIdnumber) {
         LOGGER.debug("Getting Employee with uniques key NationalIdnumber");
         return employeeService.getByNationalIdnumber(nationalIdnumber);

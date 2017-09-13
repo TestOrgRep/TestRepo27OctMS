@@ -15,6 +15,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.validation.annotation.Validated;
 
 import com.wavemaker.runtime.data.dao.WMGenericDao;
 import com.wavemaker.runtime.data.exception.EntityNotFoundException;
@@ -33,6 +34,7 @@ import com.testallservicesforvcs.adventureworks2014.VjobCandidateEducationId;
  * @see VjobCandidateEducation
  */
 @Service("AdventureWorks2014.VjobCandidateEducationService")
+@Validated
 public class VjobCandidateEducationServiceImpl implements VjobCandidateEducationService {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(VjobCandidateEducationServiceImpl.class);

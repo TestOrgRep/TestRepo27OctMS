@@ -7,11 +7,12 @@
     "catalog" : "AdventureWorks2014",
     "columns" : [ {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "businessEntityId",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -33,11 +34,12 @@
       "unique" : true
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "nationalIdnumber",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -59,11 +61,12 @@
       "unique" : true
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "loginId",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -85,11 +88,12 @@
       "unique" : true
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "organizationNode",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -111,11 +115,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "organizationLevel",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -137,11 +142,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "jobTitle",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -163,11 +169,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "birthDate",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -189,11 +196,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "maritalStatus",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -215,11 +223,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "gender",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -241,11 +250,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "hireDate",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -267,11 +277,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "salariedFlag",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -293,11 +304,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "vacationHours",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -319,11 +331,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "sickLeaveHours",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -345,11 +358,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "currentFlag",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -371,11 +385,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "rowguid",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -397,11 +412,12 @@
       "unique" : true
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "modifiedDate",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -517,11 +533,12 @@
     "catalog" : "AdventureWorks2014",
     "columns" : [ {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "departmentId",
       "foreignKey" : false,
       "generatorType" : "identity",
@@ -543,11 +560,12 @@
       "unique" : true
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "name",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -569,11 +587,12 @@
       "unique" : true
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "groupName",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -595,11 +614,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "modifiedDate",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -667,11 +687,12 @@
     "catalog" : "AdventureWorks2014",
     "columns" : [ {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "businessEntityId",
       "foreignKey" : true,
       "generatorType" : "assigned",
@@ -693,11 +714,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "departmentId",
       "foreignKey" : true,
       "generatorType" : "assigned",
@@ -719,11 +741,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "shiftId",
       "foreignKey" : true,
       "generatorType" : "assigned",
@@ -745,11 +768,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "startDate",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -771,11 +795,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "endDate",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -797,11 +822,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "modifiedDate",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -896,11 +922,12 @@
     "catalog" : "AdventureWorks2014",
     "columns" : [ {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "businessEntityId",
       "foreignKey" : true,
       "generatorType" : "assigned",
@@ -922,11 +949,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "rateChangeDate",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -948,11 +976,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "rate",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -974,11 +1003,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "payFrequency",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -1000,11 +1030,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "modifiedDate",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -1065,11 +1096,12 @@
     "catalog" : "AdventureWorks2014",
     "columns" : [ {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "jobCandidateId",
       "foreignKey" : false,
       "generatorType" : "identity",
@@ -1091,11 +1123,12 @@
       "unique" : true
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "businessEntityId",
       "foreignKey" : true,
       "generatorType" : "assigned",
@@ -1117,11 +1150,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "resume",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -1143,11 +1177,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "modifiedDate",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -1208,11 +1243,12 @@
     "catalog" : "AdventureWorks2014",
     "columns" : [ {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "businessEntityId",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -1234,11 +1270,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "title",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -1260,11 +1297,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "firstName",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -1286,11 +1324,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "middleName",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -1312,11 +1351,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "lastName",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -1338,11 +1378,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "suffix",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -1364,11 +1405,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "jobTitle",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -1390,11 +1432,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "phoneNumber",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -1416,11 +1459,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "phoneNumberType",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -1442,11 +1486,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "emailAddress",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -1468,11 +1513,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "emailPromotion",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -1494,11 +1540,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "addressLine1",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -1520,11 +1567,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "addressLine2",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -1546,11 +1594,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "city",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -1572,11 +1621,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "stateProvinceName",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -1598,11 +1648,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "postalCode",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -1624,11 +1675,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "countryRegionName",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -1650,11 +1702,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "additionalContactInfo",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -1688,7 +1741,7 @@
         "generatorValue" : null,
         "schemaName" : null
       },
-      "name" : "PRIMARY",
+      "name" : null,
       "virtual" : false
     },
     "relations" : [ ],
@@ -1698,11 +1751,12 @@
     "catalog" : "AdventureWorks2014",
     "columns" : [ {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "businessEntityId",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -1724,11 +1778,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "title",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -1750,11 +1805,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "firstName",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -1776,11 +1832,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "middleName",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -1802,11 +1859,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "lastName",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -1828,11 +1886,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "suffix",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -1854,11 +1913,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "jobTitle",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -1880,11 +1940,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "department",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -1906,11 +1967,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "groupName",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -1932,11 +1994,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "startDate",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -1970,7 +2033,7 @@
         "generatorValue" : null,
         "schemaName" : null
       },
-      "name" : "PRIMARY",
+      "name" : null,
       "virtual" : false
     },
     "relations" : [ ],
@@ -1980,11 +2043,12 @@
     "catalog" : "AdventureWorks2014",
     "columns" : [ {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "businessEntityId",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -2006,11 +2070,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "title",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -2032,11 +2097,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "firstName",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -2058,11 +2124,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "middleName",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -2084,11 +2151,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "lastName",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -2110,11 +2178,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "suffix",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -2136,11 +2205,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "shift",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -2162,11 +2232,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "department",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -2188,11 +2259,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "groupName",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -2214,11 +2286,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "startDate",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -2240,11 +2313,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "endDate",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -2278,7 +2352,7 @@
         "generatorValue" : null,
         "schemaName" : null
       },
-      "name" : "PRIMARY",
+      "name" : null,
       "virtual" : false
     },
     "relations" : [ ],
@@ -2288,11 +2362,12 @@
     "catalog" : "AdventureWorks2014",
     "columns" : [ {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "jobCandidateId",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -2314,11 +2389,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "businessEntityId",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -2340,11 +2416,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "name_prefix",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -2366,11 +2443,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "name_first",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -2392,11 +2470,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "name_middle",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -2418,11 +2497,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "name_last",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -2444,11 +2524,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "name_suffix",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -2470,11 +2551,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "skills",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -2496,11 +2578,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "addr_type",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -2522,11 +2605,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "addr_loc_countryRegion",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -2548,11 +2632,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "addr_loc_state",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -2574,11 +2659,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "addr_loc_city",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -2600,11 +2686,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "addr_postalCode",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -2626,11 +2713,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "email",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -2652,11 +2740,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "webSite",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -2678,11 +2767,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "modifiedDate",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -2716,7 +2806,7 @@
         "generatorValue" : null,
         "schemaName" : null
       },
-      "name" : "PRIMARY",
+      "name" : null,
       "virtual" : false
     },
     "relations" : [ ],
@@ -2726,11 +2816,12 @@
     "catalog" : "AdventureWorks2014",
     "columns" : [ {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "jobCandidateId",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -2752,11 +2843,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "edu_level",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -2778,11 +2870,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "edu_startDate",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -2804,11 +2897,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "edu_endDate",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -2830,11 +2924,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "edu_degree",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -2856,11 +2951,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "edu_major",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -2882,11 +2978,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "edu_minor",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -2908,11 +3005,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "edu_gpa",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -2934,11 +3032,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "edu_gpascale",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -2960,11 +3059,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "edu_school",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -2986,11 +3086,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "edu_loc_countryRegion",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -3012,11 +3113,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "edu_loc_state",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -3038,11 +3140,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "edu_loc_city",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -3076,7 +3179,7 @@
         "generatorValue" : null,
         "schemaName" : null
       },
-      "name" : "PRIMARY",
+      "name" : null,
       "virtual" : false
     },
     "relations" : [ ],
@@ -3086,11 +3189,12 @@
     "catalog" : "AdventureWorks2014",
     "columns" : [ {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "jobCandidateId",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -3112,11 +3216,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "emp_startDate",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -3138,11 +3243,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "emp_endDate",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -3164,11 +3270,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "emp_orgName",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -3190,11 +3297,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "emp_jobTitle",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -3216,11 +3324,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "emp_responsibility",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -3242,11 +3351,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "emp_functionCategory",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -3268,11 +3378,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "emp_industryCategory",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -3294,11 +3405,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "emp_loc_countryRegion",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -3320,11 +3432,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "emp_loc_state",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -3346,11 +3459,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "emp_loc_city",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -3384,7 +3498,7 @@
         "generatorValue" : null,
         "schemaName" : null
       },
-      "name" : "PRIMARY",
+      "name" : null,
       "virtual" : false
     },
     "relations" : [ ],
@@ -3394,11 +3508,12 @@
     "catalog" : "AdventureWorks2014",
     "columns" : [ {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "shiftId",
       "foreignKey" : false,
       "generatorType" : "identity",
@@ -3420,11 +3535,12 @@
       "unique" : true
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "name",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -3446,11 +3562,12 @@
       "unique" : true
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "startTime",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -3472,11 +3589,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "endTime",
       "foreignKey" : false,
       "generatorType" : "assigned",
@@ -3498,11 +3616,12 @@
       "unique" : false
     }, {
       "columnValue" : {
-        "type" : "user-defined",
         "insertable" : true,
         "updatable" : true,
-        "defaultValue" : null
+        "defaultValue" : null,
+        "type" : "user-defined"
       },
+      "constraintList" : null,
       "fieldName" : "modifiedDate",
       "foreignKey" : false,
       "generatorType" : "assigned",

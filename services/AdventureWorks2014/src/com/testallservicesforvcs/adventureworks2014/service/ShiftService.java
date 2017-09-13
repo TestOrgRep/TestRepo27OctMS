@@ -8,6 +8,8 @@ package com.testallservicesforvcs.adventureworks2014.service;
 import java.sql.Time;
 import java.util.Map;
 
+import javax.validation.Valid;
+
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
@@ -33,7 +35,7 @@ public interface ShiftService {
      * @param shift Details of the Shift to be created; value cannot be null.
      * @return The newly created Shift.
      */
-	Shift create(Shift shift);
+	Shift create(@Valid Shift shift);
 
 
 	/**
@@ -54,15 +56,6 @@ public interface ShiftService {
 	Shift findById(Short shiftIdInstance);
 
     /**
-	 * Find and return the Shift for given name  if exists.
-	 *
-	 * @param name value of name; value cannot be null.
-	 * @return Shift associated with the given inputs.
-     * @throws EntityNotFoundException if no matching Shift found.
-	 */
-    Shift getByName(String name)throws EntityNotFoundException;
-
-    /**
 	 * Find and return the Shift for given startTime  andendTime  if exists.
 	 *
 	 * @param startTime value of startTime; value cannot be null.
@@ -71,6 +64,15 @@ public interface ShiftService {
      * @throws EntityNotFoundException if no matching Shift found.
 	 */
     Shift getByStartTimeAndEndTime(Time startTime, Time endTime)throws EntityNotFoundException;
+
+    /**
+	 * Find and return the Shift for given name  if exists.
+	 *
+	 * @param name value of name; value cannot be null.
+	 * @return Shift associated with the given inputs.
+     * @throws EntityNotFoundException if no matching Shift found.
+	 */
+    Shift getByName(String name)throws EntityNotFoundException;
 
 	/**
 	 * Updates the details of an existing Shift. It replaces all fields of the existing Shift with the given shift.
@@ -81,7 +83,7 @@ public interface ShiftService {
 	 * @return The updated Shift.
 	 * @throws EntityNotFoundException if no Shift is found with given input.
 	 */
-	Shift update(Shift shift) throws EntityNotFoundException;
+	Shift update(@Valid Shift shift) throws EntityNotFoundException;
 
     /**
 	 * Deletes an existing Shift with the given id.

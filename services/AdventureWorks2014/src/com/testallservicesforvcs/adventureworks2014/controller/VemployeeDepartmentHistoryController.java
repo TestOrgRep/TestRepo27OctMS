@@ -54,9 +54,9 @@ public class VemployeeDepartmentHistoryController {
 	private VemployeeDepartmentHistoryService vemployeeDepartmentHistoryService;
 
 	@ApiOperation(value = "Creates a new VemployeeDepartmentHistory instance.")
-	@RequestMapping(method = RequestMethod.POST)
+@RequestMapping(method = RequestMethod.POST)
     @WMAccessVisibility(value = AccessSpecifier.APP_ONLY)
-	public VemployeeDepartmentHistory createVemployeeDepartmentHistory(@RequestBody VemployeeDepartmentHistory vemployeeDepartmentHistory) {
+public VemployeeDepartmentHistory createVemployeeDepartmentHistory(@RequestBody VemployeeDepartmentHistory vemployeeDepartmentHistory) {
 		LOGGER.debug("Create VemployeeDepartmentHistory with information: {}" , vemployeeDepartmentHistory);
 
 		vemployeeDepartmentHistory = vemployeeDepartmentHistoryService.create(vemployeeDepartmentHistory);
@@ -65,7 +65,7 @@ public class VemployeeDepartmentHistoryController {
 	    return vemployeeDepartmentHistory;
 	}
 
-    @ApiOperation(value = "Returns the VemployeeDepartmentHistory instance associated with the given composite-id.")
+@ApiOperation(value = "Returns the VemployeeDepartmentHistory instance associated with the given composite-id.")
     @RequestMapping(value = "/composite-id", method = RequestMethod.GET)
     @WMAccessVisibility(value = AccessSpecifier.APP_ONLY)
     public VemployeeDepartmentHistory getVemployeeDepartmentHistory(@RequestParam("businessEntityId") Integer businessEntityId,@RequestParam("title") String title,@RequestParam("firstName") String firstName,@RequestParam("middleName") String middleName,@RequestParam("lastName") String lastName,@RequestParam("suffix") String suffix,@RequestParam("shift") String shift,@RequestParam("department") String department,@RequestParam("groupName") String groupName,@RequestParam("startDate") Date startDate,@RequestParam("endDate") Date endDate) throws EntityNotFoundException {

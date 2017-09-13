@@ -7,6 +7,8 @@ package com.testallservicesforvcs.adventureworks2014.service;
 
 import java.util.Map;
 
+import javax.validation.Valid;
+
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
@@ -34,7 +36,7 @@ public interface EmployeeService {
      * @param employee Details of the Employee to be created; value cannot be null.
      * @return The newly created Employee.
      */
-	Employee create(Employee employee);
+	Employee create(@Valid Employee employee);
 
 
 	/**
@@ -55,15 +57,6 @@ public interface EmployeeService {
 	Employee findById(Integer employeeId);
 
     /**
-	 * Find and return the Employee for given rowguid  if exists.
-	 *
-	 * @param rowguid value of rowguid; value cannot be null.
-	 * @return Employee associated with the given inputs.
-     * @throws EntityNotFoundException if no matching Employee found.
-	 */
-    Employee getByRowguid(String rowguid)throws EntityNotFoundException;
-
-    /**
 	 * Find and return the Employee for given loginId  if exists.
 	 *
 	 * @param loginId value of loginId; value cannot be null.
@@ -71,6 +64,15 @@ public interface EmployeeService {
      * @throws EntityNotFoundException if no matching Employee found.
 	 */
     Employee getByLoginId(String loginId)throws EntityNotFoundException;
+
+    /**
+	 * Find and return the Employee for given rowguid  if exists.
+	 *
+	 * @param rowguid value of rowguid; value cannot be null.
+	 * @return Employee associated with the given inputs.
+     * @throws EntityNotFoundException if no matching Employee found.
+	 */
+    Employee getByRowguid(String rowguid)throws EntityNotFoundException;
 
     /**
 	 * Find and return the Employee for given nationalIdnumber  if exists.
@@ -90,7 +92,7 @@ public interface EmployeeService {
 	 * @return The updated Employee.
 	 * @throws EntityNotFoundException if no Employee is found with given input.
 	 */
-	Employee update(Employee employee) throws EntityNotFoundException;
+	Employee update(@Valid Employee employee) throws EntityNotFoundException;
 
     /**
 	 * Deletes an existing Employee with the given id.

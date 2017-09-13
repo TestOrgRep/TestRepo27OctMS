@@ -52,9 +52,9 @@ public class VacationController {
 	private VacationService vacationService;
 
 	@ApiOperation(value = "Creates a new Vacation instance.")
-	@RequestMapping(method = RequestMethod.POST)
+@RequestMapping(method = RequestMethod.POST)
     @WMAccessVisibility(value = AccessSpecifier.APP_ONLY)
-	public Vacation createVacation(@RequestBody Vacation vacation) {
+public Vacation createVacation(@RequestBody Vacation vacation) {
 		LOGGER.debug("Create Vacation with information: {}" , vacation);
 
 		vacation = vacationService.create(vacation);
@@ -62,7 +62,6 @@ public class VacationController {
 
 	    return vacation;
 	}
-
 
     @ApiOperation(value = "Returns the Vacation instance associated with the given id.")
     @RequestMapping(value = "/{id:.+}", method = RequestMethod.GET)

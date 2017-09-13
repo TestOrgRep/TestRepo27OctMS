@@ -59,6 +59,7 @@
         <security:intercept-url pattern="/j_spring_security_logout" access="permitAll"/>
         <security:intercept-url pattern="/services/prefabs/**/servicedefs" access="permitAll"/>
         <security:intercept-url pattern="/services/security/**" access="permitAll"/>
+        <security:intercept-url pattern="/services/application/i18n/**" access="permitAll"/>
         <security:intercept-url pattern="/services/servicedefs" access="permitAll"/>
         <security:intercept-url pattern="/" access="isAuthenticated()"/>
         <security:intercept-url pattern="/**" access="isAuthenticated()"/>
@@ -182,14 +183,11 @@
         <property name="filterProcessesUrl" value="/j_spring_security_check"/>
         <property name="usernameParameter" value="j_username"/>
         <property name="passwordParameter" value="j_password"/>
-        <property name="authenticationDetailsSource" ref="WMWebAuthenticationDetailsSource"/>
         <property name="rememberMeServices" ref="rememberMeServices"/>
     </bean>
     <bean class="org.springframework.security.web.authentication.www.BasicAuthenticationFilter" id="WMBasicAuthenticationFilter">
         <constructor-arg ref="authenticationManager"/>
-        <property name="authenticationDetailsSource" ref="WMWebAuthenticationDetailsSource"/>
     </bean>
-    <bean class="com.wavemaker.runtime.security.WMWebAuthenticationDetailsSource" id="WMWebAuthenticationDetailsSource"/>
     <bean class="com.wavemaker.runtime.security.WMAuthenticationEntryPoint" id="WMSecAuthEntryPoint">
         <constructor-arg value="/index.html"/>
     </bean>
@@ -238,5 +236,18 @@
         <constructor-arg>
             <security:filter-chain pattern="/**" filters="sslSecureFilter, wmXSSFilter, wmXFrameOptionsFilter, wmXContentTypeOptionsFilter"/>
         </constructor-arg>
+    </bean>
+    <bean class="com.wavemaker.commons.model.security.CorsConfig" id="corsConfig">
+        <property name="enabled" value="${general.cors.enabled}"/>
+        <property name="maxAge" value="${general.cors.maxAge}"/>
+        <property name="pathEntries">
+            <list>
+                <bean class="com.wavemaker.commons.model.security.PathEntry" id="root">
+                    <property name="name" value="root"/>
+                    <property name="path" value="/**"/>
+                    <property name="allowedOrigins" value="${general.cors.root.allowedOrigins}"/>
+                </bean>
+            </list>
+        </property>
     </bean>
 </beans>

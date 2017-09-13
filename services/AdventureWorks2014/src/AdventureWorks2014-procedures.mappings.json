@@ -6,6 +6,7 @@
       "type" : "integer",
       "list" : false,
       "variableType" : "PROMPT",
+      "variableName" : null,
       "testValue" : "2",
       "required" : false,
       "parameterType" : "IN"
@@ -14,6 +15,7 @@
       "type" : "string",
       "list" : false,
       "variableType" : "PROMPT",
+      "variableName" : null,
       "testValue" : "",
       "required" : false,
       "parameterType" : "OUT"

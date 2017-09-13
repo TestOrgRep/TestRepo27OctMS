@@ -52,9 +52,9 @@ public class JobCandidateController {
 	private JobCandidateService jobCandidateService;
 
 	@ApiOperation(value = "Creates a new JobCandidate instance.")
-	@RequestMapping(method = RequestMethod.POST)
+@RequestMapping(method = RequestMethod.POST)
     @WMAccessVisibility(value = AccessSpecifier.APP_ONLY)
-	public JobCandidate createJobCandidate(@RequestBody JobCandidate jobCandidate) {
+public JobCandidate createJobCandidate(@RequestBody JobCandidate jobCandidate) {
 		LOGGER.debug("Create JobCandidate with information: {}" , jobCandidate);
 
 		jobCandidate = jobCandidateService.create(jobCandidate);
@@ -62,7 +62,6 @@ public class JobCandidateController {
 
 	    return jobCandidate;
 	}
-
 
     @ApiOperation(value = "Returns the JobCandidate instance associated with the given id.")
     @RequestMapping(value = "/{id:.+}", method = RequestMethod.GET)

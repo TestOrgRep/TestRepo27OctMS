@@ -7,6 +7,8 @@ package com.hrdb.service;
 
 import java.util.Map;
 
+import javax.validation.Valid;
+
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
@@ -32,7 +34,7 @@ public interface EmployeeService {
      * @param employee Details of the Employee to be created; value cannot be null.
      * @return The newly created Employee.
      */
-	Employee create(Employee employee);
+	Employee create(@Valid Employee employee);
 
 
 	/**
@@ -62,7 +64,7 @@ public interface EmployeeService {
 	 * @return The updated Employee.
 	 * @throws EntityNotFoundException if no Employee is found with given input.
 	 */
-	Employee update(Employee employee) throws EntityNotFoundException;
+	Employee update(@Valid Employee employee) throws EntityNotFoundException;
 
     /**
 	 * Deletes an existing Employee with the given id.
@@ -142,18 +144,6 @@ public interface EmployeeService {
 	Page<Map<String, Object>> getAggregatedValues(AggregationInfo aggregationInfo, Pageable pageable);
 
     /*
-     * Returns the associated employeesForManagerId for given Employee id.
-     *
-     * @param empId value of empId; value cannot be null
-     * @param pageable Details of the pagination information along with the sorting options. If null returns all matching records.
-     * @return Paginated list of associated Employee instances.
-     *
-     * @see Pageable
-     * @see Page
-     */
-    Page<Employee> findAssociatedEmployeesForManagerId(Integer empId, Pageable pageable);
-
-    /*
      * Returns the associated vacations for given Employee id.
      *
      * @param empId value of empId; value cannot be null
@@ -164,6 +154,18 @@ public interface EmployeeService {
      * @see Page
      */
     Page<Vacation> findAssociatedVacations(Integer empId, Pageable pageable);
+
+    /*
+     * Returns the associated employeesForManagerId for given Employee id.
+     *
+     * @param empId value of empId; value cannot be null
+     * @param pageable Details of the pagination information along with the sorting options. If null returns all matching records.
+     * @return Paginated list of associated Employee instances.
+     *
+     * @see Pageable
+     * @see Page
+     */
+    Page<Employee> findAssociatedEmployeesForManagerId(Integer empId, Pageable pageable);
 
 }
 
