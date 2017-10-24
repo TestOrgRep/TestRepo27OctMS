@@ -12,6 +12,7 @@ import java.util.Objects;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
+import javax.persistence.ForeignKey;
 import javax.persistence.Id;
 import javax.persistence.IdClass;
 import javax.persistence.JoinColumn;
@@ -99,7 +100,7 @@ public class EmployeeDepartmentHistory implements Serializable {
     }
 
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "`DepartmentID`", referencedColumnName = "`DepartmentID`", insertable = false, updatable = false)
+    @JoinColumn(name = "`DepartmentID`", referencedColumnName = "`DepartmentID`", insertable = false, updatable = false, foreignKey = @ForeignKey(name = "`FK_EmployeeDepartmentHistory_Department_DepartmentID`"))
     public Department getDepartment() {
         return this.department;
     }
@@ -113,7 +114,7 @@ public class EmployeeDepartmentHistory implements Serializable {
     }
 
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "`BusinessEntityID`", referencedColumnName = "`BusinessEntityID`", insertable = false, updatable = false)
+    @JoinColumn(name = "`BusinessEntityID`", referencedColumnName = "`BusinessEntityID`", insertable = false, updatable = false, foreignKey = @ForeignKey(name = "`FK_EmployeeDepartmentHistory_Employee_BusinessEntityID`"))
     public Employee getEmployee() {
         return this.employee;
     }
@@ -127,7 +128,7 @@ public class EmployeeDepartmentHistory implements Serializable {
     }
 
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "`ShiftID`", referencedColumnName = "`ShiftID`", insertable = false, updatable = false)
+    @JoinColumn(name = "`ShiftID`", referencedColumnName = "`ShiftID`", insertable = false, updatable = false, foreignKey = @ForeignKey(name = "`FK_EmployeeDepartmentHistory_Shift_ShiftID`"))
     public Shift getShift() {
         return this.shift;
     }

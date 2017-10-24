@@ -14,6 +14,7 @@ import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
+import javax.persistence.ForeignKey;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -211,7 +212,7 @@ public class Employee implements Serializable {
     }
 
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "`DEPT_ID`", referencedColumnName = "`DEPT_ID`", insertable = false, updatable = false)
+    @JoinColumn(name = "`DEPT_ID`", referencedColumnName = "`DEPT_ID`", insertable = false, updatable = false, foreignKey = @ForeignKey(name = "`DEPTFKEY`"))
     public Department getDepartment() {
         return this.department;
     }
@@ -227,7 +228,7 @@ public class Employee implements Serializable {
     // ignoring self relation properties to avoid circular loops.
     @JsonIgnoreProperties({"employeeByManagerId", "employeesForManagerId"})
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "`MANAGER_ID`", referencedColumnName = "`EMP_ID`", insertable = false, updatable = false)
+    @JoinColumn(name = "`MANAGER_ID`", referencedColumnName = "`EMP_ID`", insertable = false, updatable = false, foreignKey = @ForeignKey(name = "`MGRFKEY`"))
     public Employee getEmployeeByManagerId() {
         return this.employeeByManagerId;
     }

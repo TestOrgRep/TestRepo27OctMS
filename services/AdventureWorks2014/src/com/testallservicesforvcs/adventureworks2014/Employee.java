@@ -32,9 +32,9 @@ import com.fasterxml.jackson.annotation.JsonProperty.Access;
  */
 @Entity
 @Table(name = "`Employee`", uniqueConstraints = {
-        @UniqueConstraint(columnNames = {"`LoginID`"}),
-        @UniqueConstraint(columnNames = {"`NationalIDNumber`"}),
-        @UniqueConstraint(columnNames = {"`rowguid`"})})
+        @UniqueConstraint(name = "`UK_550s85r2wnakc17q5diuit3q5`", columnNames = {"`LoginID`"}),
+        @UniqueConstraint(name = "`UK_ktpwii8so9uy1t5iwicaj002j`", columnNames = {"`NationalIDNumber`"}),
+        @UniqueConstraint(name = "`UK_36c8yp0q8ry0y2acrd50qjkt`", columnNames = {"`rowguid`"})})
 public class Employee implements Serializable {
 
     private Integer businessEntityId;

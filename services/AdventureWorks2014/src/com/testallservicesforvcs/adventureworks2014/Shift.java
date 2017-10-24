@@ -32,8 +32,8 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
  */
 @Entity
 @Table(name = "`Shift`", uniqueConstraints = {
-        @UniqueConstraint(columnNames = {"`Name`"}),
-        @UniqueConstraint(columnNames = {"`StartTime`", "`EndTime`"})})
+        @UniqueConstraint(name = "`UK_t5p380tn7qe2ynvkpp2iuw164`", columnNames = {"`Name`"}),
+        @UniqueConstraint(name = "`UK_d8auwq05um6bp8uwxgntu5i0o`", columnNames = {"`StartTime`", "`EndTime`"})})
 public class Shift implements Serializable {
 
     private Short shiftId;

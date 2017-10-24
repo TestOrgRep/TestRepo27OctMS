@@ -28,7 +28,7 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
  */
 @Entity
 @Table(name = "`DEPARTMENT`", uniqueConstraints = {
-        @UniqueConstraint(columnNames = {"`DEPT_CODE`"})})
+        @UniqueConstraint(name = "`SYS_IDX_UK_DEPARTMENT_DEPT_CODE_10095`", columnNames = {"`DEPT_CODE`"})})
 public class Department implements Serializable {
 
     private Integer deptId;
