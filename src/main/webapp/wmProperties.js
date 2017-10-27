@@ -1,5 +1,5 @@
 var _WM_APP_PROPERTIES = {
-  "activeTheme" : "material",
+  "activeTheme" : "neon",
   "dateFormat" : "",
   "defaultLanguage" : "en",
   "displayName" : "TestAllServicesforVCS_31May_PRd1",

@@ -369,6 +369,6 @@
         <spring.version>4.3.9.RELEASE</spring.version>
         <profile.props.file>development.properties</profile.props.file>
         <spring.security.version>4.1.2.RELEASE</spring.security.version>
-        <wavemaker.studio.version>9.0.1.3819</wavemaker.studio.version>
+        <wavemaker.studio.version>9.0.1.3823</wavemaker.studio.version>
     </properties>
 </project>
